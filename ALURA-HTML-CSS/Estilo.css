@@ -1,0 +1,170 @@
+:root{
+    /* variaveis facilitar o tarbalho*/
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --font-principal: 'Inter';
+    --botao-azul-efeito: #00bd00 ;
+
+}
+
+*{ /*resetando a amrgem e o padding da pagina*/
+    margin: 0;
+    padding: 0;
+}
+
+body{ /*estilo principal do corpo da pagina*/
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 16px; /* tamanho da fonte*/
+    font-weight: 400; /* peso da fonte*/
+
+}
+
+.container__titulo{ /*formatando o titulo principal*/
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.classe-principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-template-columns: 50% 50%; /*usando grid-template-columns: 50% 50%; podemos dividir a tela em varias partes como 50% 25% 25% entre outros */
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+}
+.container__botao{ /* botao principal*/
+    background-color: var(--botao-azul);
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+}
+.botao_secundario{ /* botao secundario*/ 
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+
+}
+
+.container__aviso{ 
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+/* vamos estilizar aimagem e colocar o espassamentos adequados*/
+.container__imagem{
+    margin: 1em 0 2em 0; /* topo: 1em - Lado-direito: 0 - parte de baixo: 2em - parte esquerda: 0 */
+}
+
+/*Editando o container da div princiapal*/
+.container__caixa{
+    margin:  0 6em; /* top e parte de baixo =  0 lado direito e exquerdo = 6em*/
+}
+
+/* vamos editar a segunda section da pagina*/
+.secundario_imagem{
+    width: 80%;
+}
+.classe-secundaria{
+   grid-template-columns: 50% 50%;
+   align-items: center;
+   margin: 0 10em;
+}
+
+.descricao_titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao_texto{
+    color: var(--cinza-secundario);
+}
+
+
+.botao_secundario_novo{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.descricao-texto{
+    padding-right: 1em;
+}
+
+
+/*vamos estilizar a terceira secion onde mostra os dispositivos*/
+
+.dispositivos{
+    text-align: center;
+}
+
+
+.dispositivos-lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos-titulo{
+    font-size: 48px;
+    font-weight: 700;
+    color:var(--branco-principal);
+
+}
+.lista-item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+/*vamos estilizar o rodapé da site*/
+.rodape{
+    text-align: center;
+}
+.rodape-logo{
+    margin-bottom: 1em;
+}
+.rodape-lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+.lista-de-link{
+    margin:  0 0.7em;
+    color: var(--branco-principal);
+    margin-bottom: 2em;
+    
+}
+a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    
+}
+
+.rodape-texto{
+    color: var(--cinza-secundario);
+    margin-bottom: 2em;
+}
+
+.lista-de-link a:hover{
+    color: var(--botao-azul);
+}
+
+
+
