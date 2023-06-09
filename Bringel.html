@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frotas</title>
+    <style>
+        :root{
+            --laranja-bringel: #FF7300;
+            --branco-padrao: #ffffff;
+            --preto-padrao: #000000;
+
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            color: var(--branco-padrao);
+            
+        }
+        .container-principal{
+            background-color: var(--laranja-bringel);
+            border-radius: 7px;
+            margin: auto;
+            margin-top: 10px;
+           
+        }
+        .titulo-solicitacao{
+            padding: 0.3em;
+            text-align: center;
+        }
+        .tabela-solicitacao{
+            border: 2px var(--branco-padrao) solid;
+            border-radius: 7px;
+        }
+        .lista{
+             border-top: 2px var(--branco-padrao) solid;
+             padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-principal">
+        <h1 class="titulo-solicitacao">Solicitação de Frete</h1>
+         <table class="tabela-solicitacao">
+        <tr class="lista">
+            <th>Nome</th>
+            <th>Setor</th>
+            <th>Empresa</th>
+            <th>Origem</th>
+            <th>Destino</th>
+            <th>Número</th>
+            <th>Data da Coleta</th>
+            <th>Data de Entrega</th>
+        </tr>
+        <tr class="lista">
+            <td  class="lista">@{outputs('Criar_item')?['body/field_6']}</td>
+            <td class="lista">@{outputs('Criar_item')?['body/field_7']}</td>
+            <td class="lista">@{outputs('Criar_item')?['body/field_9']}</td>
+            <td class="lista">@{outputs('Criar_item')?['body/field_10']}</td>
+            <td class="lista">@{outputs('Criar_item')?['body/field_11']}</td>
+            <td class="lista">@{outputs('Criar_item')?['body/field_12']}</td>
+            <td class="lista">@{outputs('Criar_item')?['body/DATADECOLETA']}</td>
+            <td class="lista">@{outputs('Criar_item')?['body/DATADEENTREGA']}</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
