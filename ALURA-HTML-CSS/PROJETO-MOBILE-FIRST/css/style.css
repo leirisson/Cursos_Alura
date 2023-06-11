@@ -1,0 +1,17 @@
+/*estou importando outro estilo de css para que não tenha que usar a tag link dentro do HTML*/
+@import url(header.css);
+@import url(reset.css);
+
+:root{
+    --cor-fundo-padrao:#EBECEE;
+    --cor-funco-branco-padrao: #ffffff;
+
+}
+
+body{
+    background-color: var(--cor-fundo-padrao);
+}
+
+.cabecalho{
+    background-color: var(--cor-funco-branco-padrao);
+}
