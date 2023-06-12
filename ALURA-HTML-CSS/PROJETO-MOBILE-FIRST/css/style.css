@@ -3,6 +3,7 @@
 @import url(reset.css);
 @import url(menu.css);
 @import url(banner.css);
+@import url(carrossel.css);
 
 :root{
     --cor-fundo-padrao:#EBECEE;
