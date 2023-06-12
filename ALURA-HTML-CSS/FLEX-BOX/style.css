@@ -1,0 +1,58 @@
+img{
+    height: 5vh;
+}
+.flex-container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    /*align-items: center;*/ /*usamos quanto temos apenas uma linha de elementos*/
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: #cecece;
+}
+.flex-item{
+    height: 45%;
+}
+.card-info-1{
+    background-color: rgb(214, 102, 10);
+    margin: 1em;
+    width: 20vh;
+    color: #fff;
+}
+
+.card-info-2{
+    background-color:#006d05;
+    color:#fff;
+    width: 20vh;
+    margin: 1em;
+}
+
+.card-info-3{
+    background-color: #6d1600;
+    color: #fff;
+    width: 20vh;
+    margin: 1em;
+}
+
+.card-info-4{
+    background-color: #1815cc;
+    color: #fff;
+    margin: 1em;
+    width: 20vh;
+}
+.card-info-5{
+    background-color: #6b0054;
+    color: #fff;
+    width: 20vh;
+    margin: 1em;
+}
+
+.container-2{
+    background-color: #006d05;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
