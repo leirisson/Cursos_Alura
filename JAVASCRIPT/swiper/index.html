@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img_leirisson.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="img01.jpeg" alt=""></div>
+       <div class="swiper-slide"><img src="img_leirisson.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="img01.jpeg" alt=""></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+  
+    <script src="https://unpkg.com/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper',{
+            cssMode:true,
+            loop: true,
+            navigation:{
+                nextEl: ".swiper-butto-next",
+                prevEl:".swiper-pagination",
+            },
+            spaceBetween: 10,
+            slidePerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+              },
+              keyboard: true,
+          });
+    </script>
+</body>
+</html>
