@@ -4,6 +4,7 @@
 @import url(menu.css);
 @import url(banner.css);
 @import url(carrossel.css);
+@import url(card_descricao.css);
 
 :root{
     --cor-fundo-padrao:#EBECEE;
@@ -11,6 +12,7 @@
     --cor-laranja: #eb9b00;
     --font-principal: 'Poppins';
     --cor-azuldegrader:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --azul:#002f52;
 
 }
 
@@ -19,4 +21,7 @@ body{
     font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 400;
+}
+ul{
+    display: none;
 }
