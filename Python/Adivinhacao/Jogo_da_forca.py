@@ -7,15 +7,18 @@ def joagar():
 
     enforcou = False
     acertou = False
+
+    letras_acertadas = ['_', '_', '_', '_', '_']
+
     while( not enforcou and not acertou):
         chute = input("Qual letra: ")
         chute.strip()
         index = 0
         for letra in palavra_secreta:
-            if(chute.upper() == letra.upper()):
-                print(f"encontrei a letra {chute.upper()} na posição {index}")
+            if(chute.upper() in letra.upper()):
+                letras_acertadas[index] = letra
             index += 1
-        print("em loop")
+        print(f"{letras_acertadas}")
 
 
 if(__name__ == "__main__"):
