@@ -1,8 +1,23 @@
+import os
+
 def joagar():
     print("*******************************")
     print("**Bem vindo ao Jogo da Forca***")
     print("*******************************")
 
+    #------------------------------------------------
+    #Adcionando interação com arquivo txt
+
+    arquivo = open("palavras.txt","r")
+    lista_de_palavras = []
+    for para_cada_linha in arquivo:
+        print(os.getcwd(arquivo))
+        para_cada_linha = para_cada_linha.strip() # retirando a barra n e tambem rtirando os epassos
+        lista_de_palavras.append(para_cada_linha)
+
+    arquivo.close()
+    #------------------------------------------------
+    print(lista_de_palavras)
     palavra_secreta = 'tijolo'.upper()
     palavra_certa = ["_" for letra in palavra_secreta]
 
@@ -16,23 +31,13 @@ def joagar():
 
     while( not enforcou and not acertou):
 
-        chute = input("Qual letra: ")
+        chute = str(input("Qual letra: ")).upper().strip()
 
-        chute.strip()
-        index = 0
-        for letra in palavra_secreta:
-            if(chute.upper() in letra.upper()):
-                letras_acertadas[index] = letra
-            index += 1
-        print(f"{letras_acertadas}")
-
-        chute.upper().strip()
-
-
+    
         if(chute in palavra_secreta):
             index = 0
             for letra in palavra_secreta:
-                if(chute.upper() == letra.upper()):
+                if(chute == letra):
                     palavra_certa[index] = letra
                 index += 1
         else:
@@ -47,5 +52,6 @@ def joagar():
         print('Voce ganhou')
     else:
         print("Voce perdeu")
+
 if(__name__ == "__main__"):
     joagar()
