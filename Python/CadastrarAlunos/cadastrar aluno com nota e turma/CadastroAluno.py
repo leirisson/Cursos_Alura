@@ -19,7 +19,7 @@ while True:
             Cadasdro_aluno = {"nome":"", "idade":"", "curso":""}
             datanascimento = str(input("Qual a data de nascimendo do aluno ex Dia-Mes-Ano: "))
 
-            nome = str(input("Digite seu nome Completo: ")).strip()
+            nome = str(input("Digite seu nome Completo: ")).strip().lower()
             caminho = f"Cadastros/{datanascimento}-{nome}.txt"
 
             with open(f'{caminho}', "w") as arquivo:
