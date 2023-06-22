@@ -1,0 +1,35 @@
+Aqui estão alguns requisitos que podem ser considerados para um sistema de cadastro de alunos:
+
+Cadastro de Alunos:
+
+O sistema deve permitir o cadastro de alunos com informações como nome, data de nascimento, gênero, endereço, etc.
+Deve haver validações para garantir a integridade dos dados, como campos obrigatórios e formatos corretos.
+Turmas:
+
+O sistema deve permitir a criação e gerenciamento de turmas, com informações como código de turma, nome, ano letivo, etc.
+Deve ser possível adicionar e remover alunos de uma turma específica.
+Registro de Notas:
+
+O sistema deve permitir o registro das notas dos alunos em diferentes disciplinas ou avaliações.
+Deve haver suporte para múltiplos tipos de notas, como notas por prova, trabalhos, participação, etc.
+Consulta de Boletim:
+
+O sistema deve fornecer uma funcionalidade para exibir o boletim de um aluno, mostrando suas notas e desempenho em cada disciplina.
+O boletim pode ser visualizado por turma, aluno específico ou por período letivo.
+Relatórios e Estatísticas:
+
+O sistema deve permitir a geração de relatórios e estatísticas relacionadas ao desempenho dos alunos, como médias, notas mais altas ou mais baixas, frequência, etc.
+Autenticação e Segurança:
+
+O sistema deve ter recursos de autenticação para garantir que apenas usuários autorizados possam acessar e modificar os dados.
+Deve haver diferentes níveis de permissões de acesso, como administrador, professor, coordenador, etc.
+Integração com outros sistemas:
+
+O sistema pode precisar ser integrado com outros sistemas ou plataformas, como sistemas de gestão escolar, sistemas de notificação ou plataformas de aprendizagem online.
+Backup e Restauração:
+
+O sistema deve ter recursos de backup e restauração para evitar perda de dados em caso de falhas ou problemas técnicos.
+Interface Amigável:
+
+O sistema deve ter uma interface intuitiva e fácil de usar, com recursos de pesquisa e filtros para facilitar a localização de alunos ou turmas específicas.
+Esses são apenas alguns exemplos de requisitos. Dependendo das necessidades específicas da instituição de ensino, outros requisitos podem ser adicionados ou modificados para atender às suas necessidades. É importante realizar uma análise detalhada dos requisitos do sistema em conjunto com os usuários e stakeholders para garantir que todas as funcionalidades necessárias sejam consideradas.

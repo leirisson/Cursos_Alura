@@ -1,0 +1,3 @@
+Nome: julia
+Idade: 23
+Curso: terra
